@@ -222,7 +222,7 @@ class AdaHERF(object):
             Predicted values.
         """
         dim = len(self._classifiers)
-        ensemble_ouput = np.zeros_like(X)
+        ensemble_output = np.zeros_like(X)
 
         for i in range(0,dim):
             xrot_z = self._scaler.transform(X.dot(self._inforotar[i]))
